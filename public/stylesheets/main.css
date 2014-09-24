@@ -1,0 +1,29 @@
+.whiteBF{
+	background: #fff;
+}
+
+.darkerBG{
+	background: #666;
+}
+
+.darkestBG{
+	background: #333;
+}
+
+.blue-banner{
+	background: #33B5E6;
+	max-height: 20px
+}
+.blue-banner body {
+	color: #fff;
+}
+
+.blue-banner h1 {
+	color: #fff;
+}
+
+.blue-banner p {
+    color: #fff;
+    font-size: 100%;
+    font-family:sans-serif;
+}	
