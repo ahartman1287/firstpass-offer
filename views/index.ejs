@@ -1,97 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <head>
+        <title>Offertunity</title>
+        <link rel='stylesheet' href='/stylesheets/main.css' />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
-    <title>Offertunity</title>
-
-    <!-- Bootstrap core CSS -->
-    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
-
-    <!-- Custom styles for this template -->
-    <link href="/stylesheets/jumbotron.css" rel="stylesheet">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Offertunity</a>
+    </head>
+    <body>
+         <div class ="top-banner">
+            <div class="blue-banner col-sm-2 col-xs-2">&nbsp;</div>
+            <div class="blue-banner col-sm-4 col-xs-2"><p>&#9906; You are from <%=location%> &#8893</p></div>
+            <div class="blue-banner col-sm-6 col-xs-2">&nbsp;</div>
         </div>
-        <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form" form action="/signup">
-            <button type="submit" class="btn btn-signin">Register</button>
-          </form>
-          <form class="navbar-form navbar-right" role="form" form action="/login">
-            <button type="submit" class="btn btn-signin">Sign in</button>
-          </form>
 
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
+      
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hey you!</h1>
-        <p> Welcome to Offertunity. Here, you can post anything you want done and we'll invite businesses to bid on the work for YOU. You can sit back, relax and watch the offers role in and then decide who you want to give your business too. Simple right? That's the Offertunity way. </p>
-        <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        <div class ="row">
+            <div class="whiteBG col-sm-8 col-xs-6">
+            <img src="images/logo.png" />
+            </div>
+            <div class="whiteBG col-sm-4 col-xs-4">
+            <a href ="/signup" class="btn btn-primary"> Signup </a>
+            <a href ="/login" class="btn btn-warning"> Login </a>
+            </div>
         </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+
+        <header class="navbar-inverse" role="banner">
+            <div class="container">
+                <nav role="navigation">
+                  <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">All Categories</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Automotive</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+            </div>
+        </header>
+        <div class = "container">
+            <div class = "jumbotron-container col-sm-8">
+                <div class="jumbotron">
+                    <h1>Hey you!!</h1>
+                    <p>Welcome to Offertunity. Here, you can post anything you want done and we'll invite businesses to bid on the work for YOU. You can sit back, relax and watch the offers role in and then decide who you want to give your business too. Simple right? That's the Offertunity way.</p>
+                    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+                </div>
+            </div>
+            <div class="hotoffertunities-container col-sm-4">&nbsp;</div>
         </div>
-      </div>
+        <div class = "container">
+            <div class="row">
+              <div class="col-sm-2 ">
+                <div class="thumbnail">
+                  <img src="images/<%=HotOffertunity1%>.png" alt="...">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Bid</a> <a href="#" class="btn btn-default" role="button">Watch</a></p>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-2 ">
+                <div class="thumbnail">
+                  <img src="images/<%=HotOffertunity2%>.png" alt="...">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Bid</a> <a href="#" class="btn btn-default" role="button">Watch</a></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-sm-2 ">
+                <div class="thumbnail">
+                  <img src="images/<%=HotOffertunity3%>.png" alt="...">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Bid</a> <a href="#" class="btn btn-default" role="button">Watch</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
 
-      <hr>
-
-      <footer>
-        <p>&copy; Offertunity 2014</p>
-      </footer>
-    </div> <!-- /container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-  </body>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    </body>
 </html>
